@@ -19,7 +19,8 @@
 import React from "react";
 // nodejs library that concatenates strings
 import classnames from "classnames";
-import UserProfile from "../../data/userInformation"
+import UserProfile from "../../data/userInformation";
+import Dropdown from "../Headers/Dropdown";
 import { Link } from "react-router-dom";
 import {
   Button,
@@ -39,11 +40,9 @@ import {
 
 import * as Scroll from "react-scroll";
 import {
-  Element,
-  Events,
+ 
   animateScroll as scroll,
-  scrollSpy,
-  scroller,
+ 
 } from "react-scroll";
 
 function IndexNavbar() {
@@ -117,12 +116,12 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.linkedin.com/in/maxime-miville-desch%C3%AAnes/"
+                href={UserProfile.linkedinLink}
                 target="_blank"
                 title="Suivez-moi sur Linkedin"
               >
                 <i className="fa fa-linkedin" />
-                <p className="d-lg-none">{UserProfile.linkedinLink}</p>
+                <p className="d-lg-none">Linkedin</p>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -148,33 +147,7 @@ function IndexNavbar() {
                 <p className="d-lg-none">GitHub</p>
               </NavLink>
             </NavItem>
-            <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  href="#pablo"
-                  nav
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="now-ui-icons design_app mr-1"></i>
-                  <p>{UserProfile.sections}</p>
-                </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem to="/index" tag={Link} onClick={() => scrollToFunction(1000, 1000)}>
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    All components
-                  </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
-                    target="_blank"
-                  >
-                    <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
-                    Documentation
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            
-      
+            <Dropdown data={UserProfile.sectionName} name={UserProfile.sections} />
           </Nav>
         </Collapse>
       </Container>

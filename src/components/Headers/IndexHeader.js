@@ -18,7 +18,7 @@
 */
 /*eslint-disable*/
 import React from "react";
-import UserProfile from "../../data/userInformation"
+import UserProfile from "../../data/userInformation";
 
 // reactstrap components
 import { Container } from "reactstrap";
@@ -31,21 +31,16 @@ function IndexHeader() {
       <div
         className="page-header section-dark"
         style={{
-          backgroundImage:
-            "url(" + require("assets/img/login.jpg") + ")",
+          backgroundImage: "url(" + require("assets/img/login.jpg") + ")",
         }}
       >
         <div className="filter" />
         <div className="content-center">
           <Container>
             <div className="title-brand">
-      <h1 className="presentation-title">{UserProfile.name}</h1>
-              <div className="fog-low">
-                
-              </div>
-              <div className="fog-low right">
-               
-              </div>
+              <h1 className="presentation-title">{UserProfile.name}</h1>
+              <div className="fog-low"></div>
+              <div className="fog-low right"></div>
             </div>
             <h2 className="presentation-subtitle text-center">
               {UserProfile.description}
@@ -58,7 +53,6 @@ function IndexHeader() {
             backgroundImage: "url(" + require("assets/img/clouds.png") + ")",
           }}
         />
-      
       </div>
     </>
   );

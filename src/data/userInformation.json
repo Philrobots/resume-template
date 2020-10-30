@@ -1,8 +1,35 @@
 {
-    "name" : "Mathieu Vendette",
-    "description": "Bienvenue sur mon site internet",
-    "facebookLink": "https://www.facebook.com/Vendette.Mathieu",
-    "linkedinLink" : "https://www.linkedin.com/in/maxime-miville-desch%C3%AAnes/",
-    "githubLink": "https://github.com/maximemvd",
-    "sections": "Sections"
+  "name": "Mathieu Vendette",
+  "description": "Bienvenue sur mon site internet",
+  "facebookLink": "https://www.facebook.com/Vendette.Mathieu",
+  "linkedinLink": "https://www.linkedin.com/in/maxime-miville-desch%C3%AAnes/",
+  "githubLink": "https://github.com/maximemvd",
+  "sections": "Sections",
+  "sectionName": [
+      {
+        "name" : "Éducation",
+        "icon":" nc-icon nc-hat-3",
+        "computerScroll": 100,
+        "mobileScroll": 100
+
+      },
+      {
+        "name" : "Expérience de travail",
+        "icon":" nc-icon nc-briefcase-24",
+        "computerScroll": 100,
+        "mobileScroll": 100
+      },
+      {
+        "name" : "Projets",
+        "icon":" nc-icon nc-globe-2",
+        "computerScroll": 100,
+        "mobileScroll": 100
+      },
+      {
+        "name" : "Compétences et loisirs",
+        "icon":" nc-icon nc-spaceship",
+        "computerScroll": 100,
+        "mobileScroll": 100
+      }
+  ]
 }
