@@ -19,25 +19,49 @@
 import React from "react";
 // nodejs library that concatenates strings
 import classnames from "classnames";
-// reactstrap components
+import UserProfile from "../../data/userInformation"
+import { Link } from "react-router-dom";
 import {
   Button,
   Collapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
   NavbarBrand,
   Navbar,
   NavItem,
   NavLink,
   Nav,
   Container,
+  UncontrolledTooltip,
 } from "reactstrap";
+
+import * as Scroll from "react-scroll";
+import {
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+  const [isMobile, setIsMobile] = React.useState(!!navigator.userAgent.match(/iphone|android|blackberry/gi) || false);
 
   const toggleNavbarCollapse = () => {
     setNavbarCollapse(!navbarCollapse);
     document.documentElement.classList.toggle("nav-open");
+  };
+
+  const scrollToFunction = (computer, mobile) => {
+    if (isMobile) {
+      scroll.scrollTo(mobile);
+    } else {
+      scroll.scrollTo(computer);
+    }
   };
 
   React.useEffect(() => {
@@ -69,9 +93,8 @@ function IndexNavbar() {
             data-placement="bottom"
             href="/index"
             target="_blank"
-            title="Coded by Creative Tim"
           >
-            Paper Kit React
+            {UserProfile.name}
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -94,18 +117,18 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim?ref=creativetim"
+                href="https://www.linkedin.com/in/maxime-miville-desch%C3%AAnes/"
                 target="_blank"
-                title="Follow us on Twitter"
+                title="Suivez-moi sur Linkedin"
               >
-                <i className="fa fa-twitter" />
-                <p className="d-lg-none">Twitter</p>
+                <i className="fa fa-linkedin" />
+                <p className="d-lg-none">{UserProfile.linkedinLink}</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                href={UserProfile.facebookLink}
                 target="_blank"
                 title="Like us on Facebook"
               >
@@ -113,21 +136,11 @@ function IndexNavbar() {
                 <p className="d-lg-none">Facebook</p>
               </NavLink>
             </NavItem>
+          
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                target="_blank"
-                title="Follow us on Instagram"
-              >
-                <i className="fa fa-instagram" />
-                <p className="d-lg-none">Instagram</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial/paper-kit-react?ref=creativetim"
+                href={UserProfile.githubLink}
                 target="_blank"
                 title="Star on GitHub"
               >
@@ -135,25 +148,33 @@ function IndexNavbar() {
                 <p className="d-lg-none">GitHub</p>
               </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
-                target="_blank"
-              >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <Button
-                className="btn-round"
-                color="danger"
-                href="#pablo"
-                target="_blank"
-                disabled
-              >
-                Upgrade to Pro
-              </Button>
-            </NavItem>
+            <UncontrolledDropdown nav>
+                <DropdownToggle
+                  caret
+                  color="default"
+                  href="#pablo"
+                  nav
+                  onClick={(e) => e.preventDefault()}
+                >
+                  <i className="now-ui-icons design_app mr-1"></i>
+                  <p>{UserProfile.sections}</p>
+                </DropdownToggle>
+                <DropdownMenu>
+                  <DropdownItem to="/index" tag={Link} onClick={() => scrollToFunction(1000, 1000)}>
+                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
+                    All components
+                  </DropdownItem>
+                  <DropdownItem
+                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
+                    target="_blank"
+                  >
+                    <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
+                    Documentation
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+            
+      
           </Nav>
         </Collapse>
       </Container>
