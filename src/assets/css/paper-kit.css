@@ -2063,7 +2063,7 @@ blockquote small {
   color: #DDDDDD; }
 
 .text-primary, .text-primary:hover {
-  color: #51cbce !important; }
+  color: #e40617 !important; }
 
 .text-info, .text-info:hover {
   color: #51bcda !important; }
@@ -4464,7 +4464,7 @@ License - nucleoapp.com/license/
     border-radius: 12px; }
 
 .card-register {
-  background-color: #FF8F5E;
+  background-color: #87b6fd;
   border-radius: 8px;
   color: #fff;
   max-width: 350px;
