@@ -22,7 +22,10 @@ import {
 } from "reactstrap";
 
 class Education extends React.Component {
-  state = {};
+  state = {
+    isMobile:
+      !!navigator.userAgent.match(/iphone|android|blackberry/gi) || false,
+  };
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
@@ -32,56 +35,23 @@ class Education extends React.Component {
     return (
       <main ref="main">
         <div className="position-relative">
-          <section className="section section-lg section-shaped pb-250">
+          <section className="section section-lg section-shaped pb-10">
             <div className="shape shape-style-1 shape-default">
               <Container>
                 <div className="title">
-                  <h2>Éducation</h2>
+                  <h2>{education.sectionName}</h2>
                 </div>
               </Container>
             </div>
           </section>
         </div>
-        <section className="section section-lg pt-lg-0 mt--200">
+        <section className="section section-lg pt-lg-0 mt--100">
           <Container>
-            <Row className="justify-content-center">
-              <Row className="row-grid">
-                <Col lg="6">
-                  <Card
-                    style={{ width: "80%" }}
-                    className="card-lift--hover shadow border-0"
-                  >
-                    <CardBody className="py-3">
-                      <h3>{education.education.name}</h3>
-                      <h5 className="note mt-2 ml-0.2">Hello</h5>
-                      <div>
-                        <Badge color="secondary big" pill className="mr-1">
-                          Hello
-                        </Badge>
-                      </div>
-                      <h5></h5>
-                    </CardBody>
-                  </Card>
-                </Col>
-                <Col lg="6">
-                  <Card
-                    style={{ width: "80%" }}
-                    className="card-lift--hover shadow border-0"
-                  >
-                    <CardBody className="py-3">
-                      <h3>{education.education.name}</h3>
-                      <h5 className="note mt-2 ml-0.2">Hello</h5>
-                      <div>
-                        <Badge color="secondary big" pill className="mr-1">
-                          Hello
-                        </Badge>
-                      </div>
-                      <h5></h5>
-                    </CardBody>
-                  </Card>
-                </Col>
-              </Row>
-            </Row>
+            <div className="justify-content-around row mb-2 mt-2">
+              {education.education.map((item) => (
+                <EducationCard data={item} isMobile={this.state.isMobile} />
+              ))}
+            </div>
           </Container>
         </section>
       </main>
