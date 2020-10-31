@@ -30,7 +30,7 @@ class Education extends React.Component {
   }
   render() {
     return (
-      <>
+
         <main ref="main">
           <div className="position-relative">
             <section className="section section-lg section-shaped pb-250">
@@ -55,7 +55,7 @@ class Education extends React.Component {
             </Container>
           </section>
         </main>
-      </>
+    
     );
   }
 }

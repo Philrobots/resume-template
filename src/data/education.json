@@ -4,6 +4,7 @@
             "name": "Université Laval",
             "program": "Baccalauréat en génie logiciel",
             "date": "2018-2022",
+            "image" :"ulaval.png",
             "myFavoriteCourse": ["Développement d'application Web",
             "Génie logiciel orienté objet",
             "Algorithmes et structures de données"
@@ -12,15 +13,7 @@
         {
             "name": "Cégep Sainte-foy",
             "program": "Science naturel",
-            "date": "2018-2022",
-            "myFavoriteCourse": ["Physique 1",
-            "Génie logiciel orienté objet",
-            "Francais 4"
-        ]
-        }, 
-        {
-            "name": "Cégep Sainte-foy",
-            "program": "Science naturel",
+            "image" :"steFoy.png",
             "date": "2018-2022",
             "myFavoriteCourse": ["Physique 1",
             "Génie logiciel orienté objet",
