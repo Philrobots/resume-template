@@ -30,32 +30,61 @@ class Education extends React.Component {
   }
   render() {
     return (
-
-        <main ref="main">
-          <div className="position-relative">
-            <section className="section section-lg section-shaped pb-250">
-              <div className="shape shape-style-1 shape-default">
-                <Container>
-                  <div className="title">
-                    <h2>Éducation</h2>
-                  </div>
-                </Container>
-              </div>
-            </section>
-          </div>
-          <section className="section section-lg pt-lg-0 mt--200">
-            <Container>
-              <Row className="justify-content-center">
-                <Row className="row-grid">
-                  {education.education.map((item) => (
-                    <EducationCard data={item} />
-                  ))}
-                </Row>
-              </Row>
-            </Container>
+      <main ref="main">
+        <div className="position-relative">
+          <section className="section section-lg section-shaped pb-250">
+            <div className="shape shape-style-1 shape-default">
+              <Container>
+                <div className="title">
+                  <h2>Éducation</h2>
+                </div>
+              </Container>
+            </div>
           </section>
-        </main>
-    
+        </div>
+        <section className="section section-lg pt-lg-0 mt--200">
+          <Container>
+            <Row className="justify-content-center">
+              <Row className="row-grid">
+                <Col lg="6">
+                  <Card
+                    style={{ width: "80%" }}
+                    className="card-lift--hover shadow border-0"
+                  >
+                    <CardBody className="py-3">
+                      <h3>{education.education.name}</h3>
+                      <h5 className="note mt-2 ml-0.2">Hello</h5>
+                      <div>
+                        <Badge color="secondary big" pill className="mr-1">
+                          Hello
+                        </Badge>
+                      </div>
+                      <h5></h5>
+                    </CardBody>
+                  </Card>
+                </Col>
+                <Col lg="6">
+                  <Card
+                    style={{ width: "80%" }}
+                    className="card-lift--hover shadow border-0"
+                  >
+                    <CardBody className="py-3">
+                      <h3>{education.education.name}</h3>
+                      <h5 className="note mt-2 ml-0.2">Hello</h5>
+                      <div>
+                        <Badge color="secondary big" pill className="mr-1">
+                          Hello
+                        </Badge>
+                      </div>
+                      <h5></h5>
+                    </CardBody>
+                  </Card>
+                </Col>
+              </Row>
+            </Row>
+          </Container>
+        </section>
+      </main>
     );
   }
 }

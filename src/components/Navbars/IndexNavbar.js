@@ -55,13 +55,6 @@ function IndexNavbar() {
     document.documentElement.classList.toggle("nav-open");
   };
 
-  const scrollToFunction = (computer, mobile) => {
-    if (isMobile) {
-      scroll.scrollTo(mobile);
-    } else {
-      scroll.scrollTo(computer);
-    }
-  };
 
   React.useEffect(() => {
     const updateNavbarColor = () => {
