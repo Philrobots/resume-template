@@ -26,10 +26,10 @@ export default ({ data, isMobile }) => (
       <img
         width={60}
         height={50}
-        src={require(`../../../assets/img/login.jpg`)}
+        src={require(`../../../assets/img/${data.image}`)}
       />
-      <h3>{data.name}</h3>
-      <h5 className="note mt-2 ml-0.2"> Hello</h5>
+      <h3>{data.poste}</h3>
+      <h5 className="note mt-2 ml-0.2"> {data.name} </h5>
       <div>
         <Button
           className="btn-round mt-1 mb-1"
@@ -37,19 +37,20 @@ export default ({ data, isMobile }) => (
           type="button"
           size="sm"
         >
-          Hey hey hey
+          {data.date}
         </Button>
       </div>
+      {data.task.length > 0 && task(data.task)}
     </CardBody>
   </Card>
 );
 
-function favoriteCourse(courses) {
+function task(tasks) {
   return (
     <div>
-      <h6 className="mt-2">Mes cours préferés</h6>
-      {courses.map((course) => (
-        <p className="mt-1 mb-1"> - {course} </p>
+      <h6 className="mt-2"> Tâches et compétences</h6>
+      {tasks.map((course) => (
+        <p className="mt-1 mb-1"> - {course.name} </p>
       ))}
     </div>
   );

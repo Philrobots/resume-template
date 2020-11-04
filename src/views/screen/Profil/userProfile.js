@@ -32,12 +32,27 @@ import {
   Container,
   Row,
   Col,
+  UncontrolledCollapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  NavbarBrand,
+  Navbar,
+  Card,
+  Form,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
 } from "reactstrap";
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
+import profileInformation from "../../../data/profileInformation.json";
+import Loisir from "./loisir";
+import Competence from "./competence";
 
 function ProfilePage() {
   const [activeTab, setActiveTab] = React.useState("1");
@@ -57,140 +72,120 @@ function ProfilePage() {
   });
   return (
     <>
-      <ProfilePageHeader />
       <div className="section profile-content">
-        <Container>
-          <div className="owner">
-            <div className="avatar">
-              <img
-                alt="..."
-                className="img-circle img-no-padding img-responsive"
-                src={require("assets/img/faces/joe-gardner-2.jpg")}
-              />
+        <div className="position-relative">
+          <section className="section section-lg section-shaped">
+            <div className="shape shape-style-1 shape-default">
+              <Container>
+                <div className="title">
+                  <h2> Profile </h2>
+                </div>
+              </Container>
             </div>
-            <div className="name">
-              <h4 className="title">
-                Jane Faker <br />
-              </h4>
-              <h6 className="description">Music Producer</h6>
-            </div>
-          </div>
-          <Row>
-            <Col className="ml-auto mr-auto text-center" md="6">
-              <p>
-                An artist of considerable range, Jane Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.
-              </p>
-              <br />
-              <Button className="btn-round" color="default" outline>
-                <i className="fa fa-cog" /> Settings
-              </Button>
-            </Col>
-          </Row>
-          <br />
-          <div className="nav-tabs-navigation">
-            <div className="nav-tabs-wrapper">
-              <Nav role="tablist" tabs>
-                <NavItem>
-                  <NavLink
-                    className={activeTab === "1" ? "active" : ""}
-                    onClick={() => {
-                      toggle("1");
-                    }}
-                  >
-                    Follows
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    className={activeTab === "2" ? "active" : ""}
-                    onClick={() => {
-                      toggle("2");
-                    }}
-                  >
-                    Following
-                  </NavLink>
-                </NavItem>
-              </Nav>
-            </div>
-          </div>
-          {/* Tab panes */}
-          <TabContent className="following" activeTab={activeTab}>
-            <TabPane tabId="1" id="follows">
-              <Row>
-                <Col className="ml-auto mr-auto" md="6">
-                  <ul className="list-unstyled follows">
-                    <li>
-                      <Row>
-                        <Col className="ml-auto mr-auto" lg="2" md="4" xs="4">
-                          <img
-                            alt="..."
-                            className="img-circle img-no-padding img-responsive"
-                            src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
-                          />
-                        </Col>
-                        <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
-                          <h6>
-                            Flume <br />
-                            <small>Musical Producer</small>
-                          </h6>
-                        </Col>
-                        <Col className="ml-auto mr-auto" lg="3" md="4" xs="4">
-                          <FormGroup check>
-                            <Label check>
-                              <Input
-                                defaultChecked
-                                defaultValue=""
-                                type="checkbox"
+          </section>
+        </div>
+        <div className="section section-login">
+          <Container>
+            <Card
+              className="section profile-content card-lift--hover shadow border-5"
+              style={{ backgroundColor: "#fff" }}
+            >
+              <Container>
+                <div className="owner">
+                  <div className="avatar">
+                    <img
+                      alt="..."
+                      className="img-circle img-no-padding img-responsive"
+                      src={require(`assets/img/${profileInformation.picture}`)}
+                    />
+                  </div>
+                  <div className="name">
+                    <h4 className="title" style={{fontSize:30}}>
+                      {profileInformation.name} <br />
+                    </h4>
+                    <h6 className="title" style={{fontWeight:500, fontSize:16}}>
+                      {profileInformation.profession}
+                    </h6>
+                  </div>
+                </div>
+                <Row>
+                  <Col className="ml-auto mr-auto text-center" md="6">
+                    <p style={{fontWeight:380, fontSize:15}}>{profileInformation.courriel}</p>
+                    <p>{profileInformation.telephone}</p>
+                    <br />
+                  </Col>
+                </Row>
+                <br />
+                <div className="nav-tabs-navigation">
+                  <div className="nav-tabs-wrapper">
+                    <Nav role="tablist" tabs>
+                      <NavItem>
+                        <NavLink
+                          className={activeTab === "1" ? "active" : ""}
+                          onClick={() => {
+                            toggle("1");
+                          }}
+                          style={{fontWeight:400, fontSize:19}}
+                        >
+                          {profileInformation.loisirs.nomSection}
+                        </NavLink>
+                      </NavItem>
+                      <NavItem>
+                        <NavLink
+                          className={activeTab === "2" ? "active" : ""}
+                          onClick={() => {
+                            toggle("2");
+                          }}
+                          style={{fontWeight:400, fontSize:19}}
+                        >
+                          {profileInformation.competences.nomSection}
+                        </NavLink>
+                      </NavItem>
+                    </Nav>
+                  </div>
+                </div>
+                {/* Tab panes */}
+                <TabContent className="following" activeTab={activeTab}>
+                  <TabPane tabId="1" id="follows">
+                    <Row>
+                      <Col className="ml-auto mr-auto" md="6">
+                        <ul className="list-unstyled follows">
+                          {profileInformation.loisirs.loisirs.length > 0 &&
+                            profileInformation.loisirs.loisirs.map((loisir) => (
+                              <Loisir
+                                nomLoisir={loisir.name}
+                                image={loisir.picture}
+                                description={loisir.description}
                               />
-                              <span className="form-check-sign" />
-                            </Label>
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                    </li>
-                    <hr />
-                    <li>
-                      <Row>
-                        <Col className="mx-auto" lg="2" md="4" xs="4">
-                          <img
-                            alt="..."
-                            className="img-circle img-no-padding img-responsive"
-                            src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
-                          />
-                        </Col>
-                        <Col lg="7" md="4" xs="4">
-                          <h6>
-                            Banks <br />
-                            <small>Singer</small>
-                          </h6>
-                        </Col>
-                        <Col lg="3" md="4" xs="4">
-                          <FormGroup check>
-                            <Label check>
-                              <Input defaultValue="" type="checkbox" />
-                              <span className="form-check-sign" />
-                            </Label>
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                    </li>
-                  </ul>
-                </Col>
-              </Row>
-            </TabPane>
-            <TabPane className="text-center" tabId="2" id="following">
-              <h3 className="text-muted">Not following anyone yet :(</h3>
-              <Button className="btn-round" color="warning">
-                Find artists
+                            ))}
+                        </ul>
+                      </Col>
+                    </Row>
+                  </TabPane>
+                  <TabPane className="text-center" tabId="2" id="following">
+                    <Row className="justify-content-center">
+                      {profileInformation.competences.competence.map((item) => (
+                        <Competence
+                          competence={item.competence}
+                          name={item.name}
+                        />
+                      ))}
+                    </Row>
+                  </TabPane>
+                </TabContent>
+              </Container>
+            </Card>
+            <div className="col text-center">
+              <Button
+                className="btn-round card-lift--hover shadow border-5 "
+                color="warning"
+              >
+                Contactez-moi !
               </Button>
-            </TabPane>
-          </TabContent>
-        </Container>
+            </div>
+          </Container>
+        </div>
       </div>
-      <DemoFooter />
     </>
   );
 }

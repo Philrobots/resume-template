@@ -3,8 +3,9 @@
     "work": [
         {
             "name": "Festo didactic ltée",
+            "image": "festoImage.jpg",
             "poste": "Développeur logiciel",
-            "date": "2016-2018",
+            "date": "Septembre 2020 - En cours ",
             "task": [
                 {
                     "name" :"Développer application"
@@ -16,8 +17,9 @@
         },
         {
             "name": "Festo didactic ltée",
-            "poste": "Développeur logiciel",
-            "date": "2016-2018",
+            "image": "festoImage.jpg",
+            "poste": "Stagiaire en développement d'application web",
+            "date": "Juin 2020 - Août 2020",
             "task": [
                 {
                     "name" :"Développer application"
@@ -29,8 +31,9 @@
         },
         {
             "name" : "Beaubois",
-            "poste":"Développeur logiciel",
-            "date": "2016-2018",
+            "poste":"Développeur d'application web",
+            "date": "Mai 2020",
+            "image": "beauboisLogo.jpg",
             "task": [
                 {
                     "name" :"Développer application"
@@ -43,7 +46,8 @@
         {
             "name" : "Revenu Québec",
             "poste":"Développeur logiciel",
-            "date": "2016-2018",
+            "date": "Juin 2019 - Mars 2020",
+            "image": "RevenuQuebec.png",
             "task": [
                 {
                     "name" :"Développer application"

@@ -19,8 +19,9 @@ import { isTemplateExpression } from "typescript";
 
 export default ({ data, isMobile }) => (
   <Card
-    style={{ width: isMobile ? 350 : 450 }}
+    style={{ width: isMobile ? 350 : 450}}
     className="card-lift--hover shadow border-0"
+
   >
     <CardBody className="py-3">
       <img

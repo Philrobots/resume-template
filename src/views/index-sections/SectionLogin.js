@@ -128,7 +128,7 @@ function SectionLogin() {
             </Col>
           </Row>
         </Container>
-      </div>{" "}
+      </div>
     </>
   );
 }

@@ -40,7 +40,7 @@ export default function Projet(props) {
       <section className="section section-lg pt-lg-0 mt--100">
         <Container>
           <div className="justify-content-around row mb-2 mt-2">
-            {projetInformation.work.map((item) => (
+            {projetInformation.projet.map((item) => (
               <ProjectCard data={item} isMobile={isMobile} />
             ))}
           </div>

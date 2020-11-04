@@ -1,55 +1,75 @@
 {
     "sectionName": "Projet et implication",
-    "work": [
+    "projet" : [
         {
-            "name": "Festo didactic ltée",
-            "poste": "Développeur logiciel",
-            "date": "2016-2018",
-            "task": [
+            "projetName": "Cofondateur",
+            "organisation": "Apple",
+            "image": "login.jpg",
+            "date": "Juin 2020 - Novembnre 2020",
+            "description": "J'ai fondé la compagnie Apple parce que je m'ennuyais",
+            "implication": [
                 {
-                    "name" :"Développer application"
+                   "name": "Créer des iphones"
                 },
                 {
-                    "name": "Travail agile"
+                    "name": "Vendre des iphones"
+                },
+                {
+                    "name": "Engager des employés"
                 }
             ]
         },
         {
-            "name": "Festo didactic ltée",
-            "poste": "Développeur logiciel",
-            "date": "2016-2018",
-            "task": [
+            "projetName": "Cofondateur",
+            "organisation": "Apple",
+            "image": "login.jpg",
+            "date": "Juin 2020 - Novembnre 2020",
+            "description": "J'ai fondé la compagnie Apple parce que je m'ennuyais",
+            "implication": [
                 {
-                    "name" :"Développer application"
+                   "name": "Créer des iphones"
                 },
                 {
-                    "name": "Travail agile"
+                    "name": "Vendre des iphones"
+                },
+                {
+                    "name": "Engager des employés"
                 }
             ]
         },
         {
-            "name" : "Beaubois",
-            "poste":"Développeur logiciel",
-            "date": "2016-2018",
-            "task": [
+            "projetName": "Cofondateur",
+            "organisation": "Apple",
+            "image": "login.jpg",
+            "date": "Juin 2020 - Novembnre 2020",
+            "description": "J'ai fondé la compagnie Apple parce que je m'ennuyais",
+            "implication": [
                 {
-                    "name" :"Développer application"
+                   "name": "Créer des iphones"
                 },
                 {
-                    "name": "Travail agile"
+                    "name": "Vendre des iphones"
+                },
+                {
+                    "name": "Engager des employés"
                 }
             ]
         },
         {
-            "name" : "Revenu Québec",
-            "poste":"Développeur logiciel",
-            "date": "2016-2018",
-            "task": [
+            "projetName": "Cofondateur",
+            "organisation": "Apple",
+            "image": "login.jpg",
+            "date": "Juin 2020 - Novembnre 2020",
+            "description": "J'ai fondé la compagnie Apple parce que je m'ennuyais",
+            "implication": [
                 {
-                    "name" :"Développer application"
+                   "name": "Créer des iphones"
                 },
                 {
-                    "name": "Travail agile"
+                    "name": "Vendre des iphones"
+                },
+                {
+                    "name": "Engager des employés"
                 }
             ]
         }

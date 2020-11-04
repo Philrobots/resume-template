@@ -1,5 +1,5 @@
 {
-  "name": "Mathieu Vendette",
+  "name": "Joe Biden",
   "backgroundImage": "login.jpg",
   "description": "Bienvenue sur mon site internet",
   "facebookLink": "https://www.facebook.com/Vendette.Mathieu",
@@ -7,29 +7,29 @@
   "githubLink": "https://github.com/maximemvd",
   "sections": "Sections",
   "sectionName": [
+    {
+      "name" : "Profile",
+      "icon":" nc-icon nc-spaceship",
+      "computerScroll": 800,
+      "mobileScroll": 800
+    },
       {
         "name" : "Éducation",
         "icon":" nc-icon nc-hat-3",
-        "computerScroll": 100,
-        "mobileScroll": 100
+        "computerScroll": 2000,
+        "mobileScroll": 2300
 
       },
       {
         "name" : "Expérience de travail",
         "icon":" nc-icon nc-briefcase-24",
-        "computerScroll": 100,
+        "computerScroll": 2750,
         "mobileScroll": 100
       },
       {
         "name" : "Projets",
         "icon":" nc-icon nc-globe-2",
-        "computerScroll": 100,
-        "mobileScroll": 100
-      },
-      {
-        "name" : "Compétences et loisirs",
-        "icon":" nc-icon nc-spaceship",
-        "computerScroll": 100,
+        "computerScroll": 3750,
         "mobileScroll": 100
       }
   ]

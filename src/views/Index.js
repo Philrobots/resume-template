@@ -30,6 +30,7 @@ import Education from "./screen/Education/Education";
 import WorkExperience from "./screen/Work/WorkExperience";
 import Projet from "./screen/Project/Projects";
 import Profile from "./screen/Profil/userProfile";
+import DemoFooter from "../components/Footers/DemoFooter";
 
 function Index() {
   document.documentElement.classList.remove("nav-open");
@@ -44,10 +45,11 @@ function Index() {
       <IndexNavbar />
       <IndexHeader />
       <div className="main">
+        <Profile />
         <Education />
         <WorkExperience />
         <Projet />
-        <Profile />
+        <DemoFooter />
       </div>
     </>
   );

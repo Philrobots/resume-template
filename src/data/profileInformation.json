@@ -1,0 +1,47 @@
+{
+    "name": "Joe Biden",
+    "picture": "joeBiden.jpg",
+    "profession": "Président des États-Unis",
+    "courriel": "joeBiden@hotmail.com",
+    "telephone": "678-123-654",
+    "loisirs" : {
+        "nomSection" : "Loisirs",
+        "loisirs": [{
+            "name":"Basket-ball",
+            "picture": "login.jpg",
+            "description": "Je joue dans l'équipe de Toronto"
+        },
+        {
+            "name":"Ski",
+            "picture": "login.jpg",
+            "description": "Je suis un professionnel"
+        },
+        {
+            "name":"Pêche",
+            "picture": "login.jpg",
+            "description": "Je suis le meilleur pêcher au monde"
+        },
+        {
+            "name":"Golf",
+            "picture": "login.jpg",
+            "description": "Je bat souvent Tiger"
+        }]
+
+    },
+    "competences": {
+        "nomSection" : "Compétences",
+        "competence": [{
+            "competence":["Python", "Javascript", "Java", "TypeScript","C++"],
+            "name": "Langage de programmation"
+        },
+        {
+            "name": "Technologie",
+            "competence":["Python", "Javascript", "Java", "TypeScript","C++"]
+        },
+        {
+            "name": "Qualités",
+            "competence":["Fonceur", "Courageux", "Java", "TypeScript","C++"]
+        }]
+
+    }
+}
