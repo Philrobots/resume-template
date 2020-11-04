@@ -2,30 +2,8 @@ import React from "react";
 
 // reactstrap components
 import {
-  Button,
-  Label,
-  FormGroup,
-  Input,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
-  Container,
   Row,
-  Col,
-  UncontrolledCollapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  NavbarBrand,
-  Navbar,
-  Card,
-  Form,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
+  Col
 } from "reactstrap";
 
 export default ({ nomLoisir, description, image }) => (

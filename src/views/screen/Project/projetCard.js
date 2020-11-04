@@ -1,19 +1,9 @@
 import React, { Component } from "react";
 
 import {
-  Badge,
   Button,
   Card,
-  CardBody,
-  CardImg,
-  FormGroup,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
-  Container,
-  Row,
-  Col,
+  CardBody
 } from "reactstrap";
 
 export default ({ data: projet, isMobile }) => (
