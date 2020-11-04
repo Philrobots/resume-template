@@ -26,10 +26,10 @@ export default ({ data, isMobile }) => (
       <img
         width={60}
         height={50}
-        src={require(`../../assets/img/${data.image}`)}
+        src={require(`../../../assets/img/login.jpg`)}
       />
       <h3>{data.name}</h3>
-      <h5 className="note mt-2 ml-0.2">{data.program}</h5>
+      <h5 className="note mt-2 ml-0.2"> Hello</h5>
       <div>
         <Button
           className="btn-round mt-1 mb-1"
@@ -37,11 +37,9 @@ export default ({ data, isMobile }) => (
           type="button"
           size="sm"
         >
-          {data.date}
+          Hey hey hey
         </Button>
       </div>
-      {data.myFavoriteCourse.length > 0 &&
-        favoriteCourse(data.myFavoriteCourse)}
     </CardBody>
   </Card>
 );

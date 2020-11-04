@@ -23,11 +23,13 @@ import React from "react";
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
 
 // index sections
 import SectionButtons from "views/index-sections/SectionButtons.js";
-import Education from "./screen/Education";
+import Education from "./screen/Education/Education";
+import WorkExperience from "./screen/Work/WorkExperience";
+import Projet from "./screen/Project/Projects";
+import Profile from "./screen/Profil/userProfile";
 
 function Index() {
   document.documentElement.classList.remove("nav-open");
@@ -42,10 +44,10 @@ function Index() {
       <IndexNavbar />
       <IndexHeader />
       <div className="main">
-        <Education/>
-        <SectionButtons />
-
-    
+        <Education />
+        <WorkExperience />
+        <Projet />
+        <Profile />
       </div>
     </>
   );

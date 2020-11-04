@@ -1,0 +1,57 @@
+{
+    "sectionName": "Projet et implication",
+    "work": [
+        {
+            "name": "Festo didactic ltée",
+            "poste": "Développeur logiciel",
+            "date": "2016-2018",
+            "task": [
+                {
+                    "name" :"Développer application"
+                },
+                {
+                    "name": "Travail agile"
+                }
+            ]
+        },
+        {
+            "name": "Festo didactic ltée",
+            "poste": "Développeur logiciel",
+            "date": "2016-2018",
+            "task": [
+                {
+                    "name" :"Développer application"
+                },
+                {
+                    "name": "Travail agile"
+                }
+            ]
+        },
+        {
+            "name" : "Beaubois",
+            "poste":"Développeur logiciel",
+            "date": "2016-2018",
+            "task": [
+                {
+                    "name" :"Développer application"
+                },
+                {
+                    "name": "Travail agile"
+                }
+            ]
+        },
+        {
+            "name" : "Revenu Québec",
+            "poste":"Développeur logiciel",
+            "date": "2016-2018",
+            "task": [
+                {
+                    "name" :"Développer application"
+                },
+                {
+                    "name": "Travail agile"
+                }
+            ]
+        }
+    ]
+}

@@ -2,7 +2,7 @@ import React from "react";
 // nodejs library that concatenates classes
 import classnames from "classnames";
 import EducationCard from "./EducationCard";
-import education from "../../data/education.json";
+import education from "../../../data/education.json";
 
 // reactstrap components
 import {
