@@ -9,22 +9,22 @@
         "loisirs": [{
             "name":"Basket-ball",
             "picture": "login.jpg",
-            "description": "Je joue dans l'équipe de Toronto"
+            "description": "J'adore joué au basket dans mes temps libres'"
         },
         {
             "name":"Ski",
             "picture": "login.jpg",
-            "description": "Je suis un professionnel"
+            "description": "J'adore faire du ski, je fais des voyages de ski chaque hiver"
         },
         {
             "name":"Pêche",
             "picture": "login.jpg",
-            "description": "Je suis le meilleur pêcher au monde"
+            "description": "J'adore aller à la pêche, je pêche surtout du saumon'"
         },
         {
             "name":"Golf",
             "picture": "login.jpg",
-            "description": "Je bat souvent Tiger"
+            "description": "Rien de plus relaxant qu'une partie de golf"
         }]
 
     },
@@ -36,11 +36,11 @@
         },
         {
             "name": "Technologie",
-            "competence":["Python", "Javascript", "Java", "TypeScript","C++"]
+            "competence":["React", "VueJs", "ExpressJS", "Django","MongoDB"]
         },
         {
             "name": "Qualités",
-            "competence":["Fonceur", "Courageux", "Java", "TypeScript","C++"]
+            "competence":["Fonceur", "Courageux", "Persistant", "Gagnant","Fort"]
         }]
 
     }

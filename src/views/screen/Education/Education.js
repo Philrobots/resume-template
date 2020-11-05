@@ -45,7 +45,7 @@ class Education extends React.Component {
             </div>
           </section>
         </div>
-        <section className="section section-lg pt-lg-0">
+        <section className="section section-lg pt-lg-0" style={{"marginTop": this.state.isMobile ? -100 : 0}}>
           <Container>
             <div className="justify-content-around row mb-2 mt-2">
               {education.education.map((item) => (

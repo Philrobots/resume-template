@@ -2,23 +2,18 @@
     "sectionName": "Éducation",
     "education": [
         {
+            "name": "Université d'Oxford",
+            "program": "Maîtrise en administration des affaires",
+            "image" :"Oxford.png",
+            "date": "2018-2022",
+            "myFavoriteCourse": ["Finance", "Marché boursier", "Obligation"]
+        },
+        {
             "name": "Université Laval",
-            "program": "Baccalauréat en génie logiciel",
+            "program": "Baccalauréat en administration",
             "date": "2018-2022",
             "image" :"ulaval.png",
-            "myFavoriteCourse": ["Développement d'application Web",
-            "Génie logiciel orienté objet",
-            "Algorithmes et structures de données"
-        ]
-        },   
-        {
-            "name": "Cégep Sainte-foy",
-            "program": "Science naturel",
-            "image" :"steFoy.png",
-            "date": "2018-2022",
-            "myFavoriteCourse": ["Physique 1",
-            "Génie logiciel orienté objet",
-            "Francais 4"
+            "myFavoriteCourse": ["Finance", "Marketing", "Comptabilité"
         ]
         }
     ]

@@ -27,7 +27,7 @@ export default function Projet(props) {
   return (
     <main>
       <div className="position-relative">
-        <section className="section section-lg section-shaped pb-10">
+        <section className="section section-lg section-shaped">
           <div className="shape shape-style-1 shape-default">
             <Container>
               <div className="title">
@@ -37,7 +37,7 @@ export default function Projet(props) {
           </div>
         </section>
       </div>
-      <section className="section section-lg pt-lg-0 mt--100">
+      <section className="section section-lg pt-lg-0" style={{"marginTop": isMobile ? -100 : 0}}>
         <Container>
           <div className="justify-content-around row mb-2 mt-2">
             {projetInformation.projet.map((item) => (

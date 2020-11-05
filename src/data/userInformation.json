@@ -16,21 +16,21 @@
       {
         "name" : "Éducation",
         "icon":" nc-icon nc-hat-3",
-        "computerScroll": 2000,
-        "mobileScroll": 2300
+        "computerScroll": 2200,
+        "mobileScroll": 2250
 
       },
       {
         "name" : "Expérience de travail",
         "icon":" nc-icon nc-briefcase-24",
-        "computerScroll": 2750,
-        "mobileScroll": 100
+        "computerScroll": 2900,
+        "mobileScroll": 3240
       },
       {
         "name" : "Projets",
         "icon":" nc-icon nc-globe-2",
-        "computerScroll": 3750,
-        "mobileScroll": 100
+        "computerScroll": 4000,
+        "mobileScroll": 4900
       }
   ]
 }

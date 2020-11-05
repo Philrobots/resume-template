@@ -5,16 +5,7 @@ import Slider from "nouislider";
 
 // reactstrap components
 import {
-  Button,
-  Label,
-  FormGroup,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
-  Container,
-  Row,
-  Col,
+  Container
 } from "reactstrap";
 
 import workInformation from "../../../data/workInformation.json";
@@ -27,7 +18,7 @@ export default function WorkExperience(props) {
   return (
     <main>
       <div className="position-relative">
-        <section className="section section-lg section-shaped pb-10">
+        <section className="section section-lg section-shaped">
           <div className="shape shape-style-1 shape-default">
             <Container>
               <div className="title">
@@ -37,7 +28,7 @@ export default function WorkExperience(props) {
           </div>
         </section>
       </div>
-      <section className="section section-lg pt-lg-0 mt--100">
+      <section className="section section-lg" style={{"marginTop": isMobile ? -100 : 0}}>
         <Container>
           <div className="justify-content-around row mb-2 mt-2">
             {workInformation.work.map((item) => (

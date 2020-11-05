@@ -2,14 +2,14 @@
     "sectionName": "Projet et implication",
     "projet" : [
         {
-            "projetName": "Cofondateur",
+            "projetName": "Président conseil d'administration",
             "organisation": "Apple",
-            "image": "login.jpg",
+            "image": "apple.jpg",
             "date": "Juin 2020 - Novembnre 2020",
-            "description": "J'ai fondé la compagnie Apple parce que je m'ennuyais",
+            "description": "Je suis présentement le président du conseil d'administration d'apple",
             "implication": [
                 {
-                   "name": "Créer des iphones"
+                   "name": "Créer des iphones et des apples watchs"
                 },
                 {
                     "name": "Vendre des iphones"
@@ -21,55 +21,56 @@
         },
         {
             "projetName": "Cofondateur",
-            "organisation": "Apple",
-            "image": "login.jpg",
+            "organisation": "Nike",
+            "image": "nike.jpg",
             "date": "Juin 2020 - Novembnre 2020",
-            "description": "J'ai fondé la compagnie Apple parce que je m'ennuyais",
+            "description": "J'ai fondé la compagnie Nike parce que je m'ennuyais un dimanche soir",
             "implication": [
                 {
-                   "name": "Créer des iphones"
+                   "name": "Faire des chandails"
                 },
                 {
-                    "name": "Vendre des iphones"
+                    "name": "Prendre de grosses décisions"
                 },
                 {
-                    "name": "Engager des employés"
+                    "name": "Pensez à de bonnes idées pour le marketing"
                 }
             ]
         },
         {
-            "projetName": "Cofondateur",
-            "organisation": "Apple",
-            "image": "login.jpg",
+            "projetName": "Investisseur",
+            "organisation": "Starbucks",
+            "image": "Starbucks_Coffee_Logo.svg.png",
             "date": "Juin 2020 - Novembnre 2020",
-            "description": "J'ai fondé la compagnie Apple parce que je m'ennuyais",
+            "description": "Je suis un grand investisseur chez Stabucks",
             "implication": [
+        
                 {
-                   "name": "Créer des iphones"
+                    "name": "Boire du café"
                 },
                 {
-                    "name": "Vendre des iphones"
-                },
-                {
-                    "name": "Engager des employés"
+                    "name": "Gagner de l'argent"
+                }
+                ,{
+                    "name": "Avoir du plaisir"
                 }
             ]
         },
         {
-            "projetName": "Cofondateur",
-            "organisation": "Apple",
-            "image": "login.jpg",
+            "projetName": "Conseiller",
+            "organisation": "Lamborghini",
+            "image": "lambo.png",
             "date": "Juin 2020 - Novembnre 2020",
-            "description": "J'ai fondé la compagnie Apple parce que je m'ennuyais",
+            "description": "Je conseille les employés chez Lamborghini dans mes temps libres",
             "implication": [
                 {
-                   "name": "Créer des iphones"
+                   "name": "Faire que les autos aillent plus vites"
                 },
                 {
-                    "name": "Vendre des iphones"
+                    "name": "S'assurer que le look soit cool"
                 },
                 {
-                    "name": "Engager des employés"
+                    "name": "M'amuser"
                 }
             ]
         }

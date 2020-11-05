@@ -2,58 +2,58 @@
     "sectionName": "Expérience de travail",
     "work": [
         {
-            "name": "Festo didactic ltée",
-            "image": "festoImage.jpg",
-            "poste": "Développeur logiciel",
+            "name": "Nike",
+            "image": "nike.jpg",
+            "poste": "Cofondateur",
             "date": "Septembre 2020 - En cours ",
             "task": [
                 {
-                    "name" :"Développer application"
+                    "name" :"Créer Nike"
                 },
                 {
-                    "name": "Travail agile"
+                    "name": "Essayer des vêtements"
                 }
             ]
         },
         {
-            "name": "Festo didactic ltée",
-            "image": "festoImage.jpg",
-            "poste": "Stagiaire en développement d'application web",
+            "name": "Apple",
+            "image": "apple.jpg",
+            "poste": "Président des ventes",
             "date": "Juin 2020 - Août 2020",
             "task": [
                 {
-                    "name" :"Développer application"
+                    "name" :"Vendre des produits Nike"
                 },
                 {
-                    "name": "Travail agile"
+                    "name": "Avoir du plaisir"
                 }
             ]
         },
         {
-            "name" : "Beaubois",
-            "poste":"Développeur d'application web",
+            "name" : "Lamborghini",
+            "poste":"Conseiller en vente",
             "date": "Mai 2020",
-            "image": "beauboisLogo.jpg",
+            "image": "lambo.jpg",
             "task": [
                 {
-                    "name" :"Développer application"
+                    "name" :"Vendre des lamborghinis"
                 },
                 {
-                    "name": "Travail agile"
+                    "name": "S'amuser"
                 }
             ]
         },
         {
-            "name" : "Revenu Québec",
-            "poste":"Développeur logiciel",
+            "name" : "Starbucks",
+            "poste":"Gouteur",
             "date": "Juin 2019 - Mars 2020",
-            "image": "RevenuQuebec.png",
+            "image": "Starbucks_Coffee_Logo.svg.png",
             "task": [
                 {
-                    "name" :"Développer application"
+                    "name" :"Gouter des cafés"
                 },
                 {
-                    "name": "Travail agile"
+                    "name": "Parler des cafés"
                 }
             ]
         }

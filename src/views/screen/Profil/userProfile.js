@@ -63,6 +63,10 @@ function ProfilePage() {
     }
   };
 
+  const [isMobile, setIsMobile] = React.useState(
+    !!navigator.userAgent.match(/iphone|android|blackberry/gi) || false
+  );
+
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("landing-page");
@@ -85,7 +89,7 @@ function ProfilePage() {
           </section>
         </div>
         <div className="section section-login">
-          <Container>
+          <Container style={{"marginTop": isMobile ? -80 : 0}}>
             <Card
               className="section profile-content card-lift--hover shadow border-5"
               style={{ backgroundColor: "#fff" }}
@@ -95,7 +99,8 @@ function ProfilePage() {
                   <div className="avatar">
                     <img
                       alt="..."
-                      className="img-circle img-no-padding img-responsive"
+                      style={{"heigth": 200, "width": 300}}
+                      className="img-thumbnail img-no-padding img-responsive"
                       src={require(`assets/img/${profileInformation.picture}`)}
                     />
                   </div>
@@ -177,6 +182,7 @@ function ProfilePage() {
             </Card>
             <div className="col text-center">
               <Button
+                href="mailto:philippe.vincent.3@ulaval.ca?subject=Intéressé par votre profil&body=Bonjour M.Vincent,%0D J'espère que vous allez bien"
                 className="btn-round card-lift--hover shadow border-5 "
                 color="warning"
               >
