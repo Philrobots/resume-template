@@ -32,7 +32,7 @@ function NucleoIcons() {
       <header>
         <h1>Paper Kit React Icons</h1>
         <p>
-          Built with{" "}
+          Built with
           <a href="https://nucleoapp.com/?ref=1712" target="_blank">
             nucleoapp.com
           </a>

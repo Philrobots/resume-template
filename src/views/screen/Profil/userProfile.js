@@ -100,7 +100,7 @@ function ProfilePage() {
                     <img
                       alt="..."
                       style={{"heigth": 200, "width": 300}}
-                      className="img-thumbnail img-no-padding img-responsive"
+                      className="img-circle img-no-padding img-responsive"
                       src={require(`assets/img/${profileInformation.picture}`)}
                     />
                   </div>
@@ -153,8 +153,6 @@ function ProfilePage() {
                 <TabContent className="following" activeTab={activeTab}>
                   <TabPane tabId="1" id="follows">
                     <Row>
-                      <Col className="ml-auto mr-auto" md="6">
-                        <ul className="list-unstyled follows">
                           {profileInformation.loisirs.loisirs.length > 0 &&
                             profileInformation.loisirs.loisirs.map((loisir) => (
                               <Loisir
@@ -163,8 +161,6 @@ function ProfilePage() {
                                 description={loisir.description}
                               />
                             ))}
-                        </ul>
-                      </Col>
                     </Row>
                   </TabPane>
                   <TabPane className="text-center" tabId="2" id="following">
@@ -182,7 +178,7 @@ function ProfilePage() {
             </Card>
             <div className="col text-center">
               <Button
-                href="mailto:philippe.vincent.3@ulaval.ca?subject=Intéressé par votre profil&body=Bonjour M.Vincent,%0D J'espère que vous allez bien"
+                href={"mailto:" + profileInformation.courriel + "?subject=Intéressé par votre profil" }
                 className="btn-round card-lift--hover shadow border-5 "
                 color="warning"
               >
