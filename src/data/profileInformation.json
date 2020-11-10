@@ -1,8 +1,8 @@
 {
-    "name": "Joe Biden",
-    "picture": "joe.jpg",
-    "profession": "Président des États-Unis",
-    "courriel": "joeBiden@hotmail.com",
+    "name": "Charles Boivin",
+    "picture": "profilPicAvatar.jpg",
+    "profession": "Comptable",
+    "courriel": "charlesboivin@gmail.com",
     "telephone": "678-123-654",
     "loisirs" : {
         "nomSection" : "Loisirs",

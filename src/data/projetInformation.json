@@ -1,76 +1,39 @@
 {
-    "sectionName": "Projet et implication",
+    "sectionName": "Projets et implications",
     "projet" : [
         {
-            "projetName": "Président conseil d'administration",
-            "organisation": "Apple",
-            "image": "apple.jpg",
-            "date": "Juin 2020 - Novembnre 2020",
-            "description": "Je suis présentement le président du conseil d'administration d'apple",
+            "projetName": "Bénévolat",
+            "organisation": "Le Grand défi Pierre Lavoie",
+            "image": "pierreLavoie.png",
+            "date": "Août 2019 - Juillet 2020",
+            "description": "J'ai fait du bénévolat pour Le Grand défi Pierre Lavoie",
             "implication": [
                 {
-                   "name": "Créer des iphones et des apples watchs"
+                   "name": "Signaleur pour les cyclistes"
                 },
                 {
-                    "name": "Vendre des iphones"
+                    "name": "Remplir les bouteilles d'eau"
                 },
                 {
-                    "name": "Engager des employés"
+                    "name": "S'assurer du bon fonctionnement de l'événement"
                 }
             ]
         },
         {
-            "projetName": "Cofondateur",
-            "organisation": "Nike",
-            "image": "nike.jpg",
-            "date": "Juin 2020 - Novembnre 2020",
-            "description": "J'ai fondé la compagnie Nike parce que je m'ennuyais un dimanche soir",
+            "projetName": "Bénévolat",
+            "organisation": "Élections canadiennes",
+            "image": "electionCanada.jpg",
+            "date": "Octobre 2019",
+            "description": "Préposé au scrutin pour les élections fédérales de 2019",
             "implication": [
                 {
-                   "name": "Faire des chandails"
+                   "name": "Compter les votes"
                 },
                 {
-                    "name": "Prendre de grosses décisions"
+                    "name": "Accueillir les voteurs"
                 },
                 {
-                    "name": "Pensez à de bonnes idées pour le marketing"
-                }
-            ]
-        },
-        {
-            "projetName": "Investisseur",
-            "organisation": "Starbucks",
-            "image": "Starbucks_Coffee_Logo.svg.png",
-            "date": "Juin 2020 - Novembnre 2020",
-            "description": "Je suis un grand investisseur chez Stabucks",
-            "implication": [
-        
-                {
-                    "name": "Boire du café"
-                },
-                {
-                    "name": "Gagner de l'argent"
-                }
-                ,{
-                    "name": "Avoir du plaisir"
-                }
-            ]
-        },
-        {
-            "projetName": "Conseiller",
-            "organisation": "Lamborghini",
-            "image": "lambo.png",
-            "date": "Juin 2020 - Novembnre 2020",
-            "description": "Je conseille les employés chez Lamborghini dans mes temps libres",
-            "implication": [
-                {
-                   "name": "Faire que les autos aillent plus vites"
-                },
-                {
-                    "name": "S'assurer que le look soit cool"
-                },
-                {
-                    "name": "M'amuser"
+                    "name": "Garder les votes des participants secrets"
                 }
             ]
         }

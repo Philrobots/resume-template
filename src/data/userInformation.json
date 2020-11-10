@@ -1,8 +1,8 @@
 {
-  "name": "Joe Biden",
+  "name": "Charles Boivin",
   "backgroundImage": "login.jpg",
   "description": "Bienvenue sur mon site internet",
-  "facebookLink": "https://www.facebook.com/Vendette.Mathieu",
+  "facebookLink": "https://www.facebook.com/philippe.vincent.10/",
   "linkedinLink": "https://www.linkedin.com/in/maxime-miville-desch%C3%AAnes/",
   "githubLink": "https://github.com/maximemvd",
   "sections": "Sections",
@@ -16,21 +16,21 @@
       {
         "name" : "Éducation",
         "icon":" nc-icon nc-hat-3",
-        "computerScroll": 2200,
-        "mobileScroll": 2250
+        "computerScroll": 1960,
+        "mobileScroll": 2130
 
       },
       {
         "name" : "Expérience de travail",
         "icon":" nc-icon nc-briefcase-24",
-        "computerScroll": 2900,
-        "mobileScroll": 3240
+        "computerScroll": 2720,
+        "mobileScroll": 3140
       },
       {
         "name" : "Projets",
         "icon":" nc-icon nc-globe-2",
         "computerScroll": 4000,
-        "mobileScroll": 4900
+        "mobileScroll": 4780
       }
   ]
 }

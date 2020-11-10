@@ -1,59 +1,59 @@
 {
-    "sectionName": "Expérience de travail",
+    "sectionName": "Expériences de travail",
     "work": [
         {
-            "name": "Nike",
-            "image": "nike.jpg",
-            "poste": "Cofondateur",
-            "date": "Septembre 2020 - En cours ",
+            "name": "Desjardins",
+            "image": "desjardin.jpg",
+            "poste": "Stagiaire en comptabilité",
+            "date": "Juin 2020 - Août 2020",
             "task": [
                 {
-                    "name" :"Créer Nike"
+                    "name" :"Travailler dans un milieu de comptabilité"
                 },
                 {
-                    "name": "Essayer des vêtements"
+                    "name": "Environnement de travail professionel"
                 }
             ]
         },
         {
             "name": "Apple",
             "image": "apple.jpg",
-            "poste": "Président des ventes",
-            "date": "Juin 2020 - Août 2020",
+            "poste": "Vendeur",
+            "date": "Décembre 2020 - Juin 2020",
             "task": [
-                {
-                    "name" :"Vendre des produits Nike"
+                { 
+                    "name" :"Vendre des appareils Nike"
                 },
                 {
-                    "name": "Avoir du plaisir"
+                    "name": "Conseiller les clients"
                 }
             ]
         },
         {
-            "name" : "Lamborghini",
-            "poste":"Conseiller en vente",
-            "date": "Mai 2020",
-            "image": "lambo.jpg",
+            "name" : "Couche-tard",
+            "poste":"Caissier",
+            "date": "Mai 2019 - Décembre 2019",
+            "image": "coucheTard.png",
             "task": [
                 {
-                    "name" :"Vendre des lamborghinis"
+                    "name" :"Répondre aux besoins des clients"
                 },
                 {
-                    "name": "S'amuser"
+                    "name": "Garder une bonne humeur avec les clients"
                 }
             ]
         },
         {
             "name" : "Starbucks",
-            "poste":"Gouteur",
-            "date": "Juin 2019 - Mars 2020",
+            "poste":"Caissier",
+            "date": "Juin 2018 - Mars 2019",
             "image": "Starbucks_Coffee_Logo.svg.png",
             "task": [
                 {
-                    "name" :"Gouter des cafés"
+                    "name" :"Servir du café aux clients"
                 },
                 {
-                    "name": "Parler des cafés"
+                    "name": "Garder une bonne humeur en tout temps"
                 }
             ]
         }
