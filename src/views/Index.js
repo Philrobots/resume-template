@@ -25,7 +25,6 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 
 // index sections
-import SectionButtons from "views/index-sections/SectionButtons.js";
 import Education from "./screen/Education/Education";
 import WorkExperience from "./screen/Work/WorkExperience";
 import Projet from "./screen/Project/Projects";
