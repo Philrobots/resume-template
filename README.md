@@ -193,12 +193,4 @@ We use GitHub Issues as the official bug tracker for the Paper Kit 2. Here are s
 - [More products](https://www.creative-tim.com/bootstrap-themes?ref=pkr-github-readme) from Creative Tim
 - Check our Bundles [here](https://www.creative-tim.com/bundles?ref=pkr-github-readme)
 
-### Social Media
 
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Instagram: <https://www.instagram.com/CreativeTimOfficial>
